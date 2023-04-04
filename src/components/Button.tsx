@@ -4,9 +4,9 @@ import clsx from "clsx";
 // custom base styles for buttons
 const baseStyles: { [key: string]: string } = {
   solid:
-    "group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2",
+    "group inline-flex items-center justify-center rounded-xl py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2",
   outline:
-    "group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm ring-1 focus:outline-none",
+    "group inline-flex items-center justify-center rounded-xl py-2 px-4 text-sm ring-1 focus:outline-none",
 };
 
 // custom variant styles for buttons depending on the base style
@@ -16,7 +16,7 @@ const variantStyles: { [key: string]: { [key: string]: string } } = {
     // stone:
     //   "bg-stone-900 text-white hover:bg-stone-800 hover:text-slate-100 active: bg-stone-800 active:text-slate-300 focus-visible:outline-slate-900",
     orange:
-      "bg-orange-300 text-white hover:bg-orange-400 hover:text-slate-100 active: bg-orange-400 active:text-slate-300 focus-visible:outline-orange-300",
+      "bg-orange-400 text-white hover:bg-orange-300  active:bg-stone-500 focus-visible:outline-orange-300",
   },
   outline: {
     // stone:
@@ -33,6 +33,7 @@ type ButtonProps = {
   children: React.ReactNode;
 };
 
+// Button component with custom base and variant styles
 export function Button({
   variant = "solid",
   color = "orange",
