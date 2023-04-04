@@ -25,13 +25,21 @@ const variantStyles: { [key: string]: { [key: string]: string } } = {
   },
 };
 
-export function Button(
+type ButtonProps = {
+  variant?: string;
+  color?: string;
+  className?: string;
+  href?: string;
+  children: React.ReactNode;
+};
+
+export function Button({
   variant = "solid",
   color = "orange",
-  href: string,
-  className: string,
-  ...props: any[]
-) {
+  className,
+  href,
+  ...props
+}: ButtonProps) {
   className = clsx(
     baseStyles[variant],
     variantStyles[variant][color],
