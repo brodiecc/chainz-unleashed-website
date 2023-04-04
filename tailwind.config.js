@@ -7,11 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["var(--font-inter)", ...defaultTheme.fontFamily.sans],
-        title: [
-          "T--font-thaleahFat",
-          fontFamily.sans,
-          ...defaultTheme.fontFamily.sans,
-        ],
+        logo: ["var(--font-thaleah-fat)", ...defaultTheme.fontFamily.sans],
       },
     },
   },

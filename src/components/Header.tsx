@@ -9,7 +9,7 @@ export default function Header() {
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         aria-label="Global"
       >
-        <a href="#" className="text-2xl">
+        <a href="#" className="text-4xl font-logo">
           Chainz <span className="text-orange-300">Unleashed</span>
         </a>
       </nav>

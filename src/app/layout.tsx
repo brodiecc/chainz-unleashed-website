@@ -4,13 +4,15 @@ import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 
 const inter = Inter({
+  subsets: ["latin"],
   display: "swap",
   variable: "--font-inter",
 });
 
 const thaleahFat = localFont({
-  src: "/fonts/ThaleahFat.woff2",
-  variable: "--font-thaleahFat",
+  display: "swap",
+  variable: "--font-thaleah-fat",
+  src: "./ThaleahFat.woff2",
 });
 
 export const metadata = {
