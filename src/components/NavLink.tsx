@@ -5,6 +5,13 @@ type NavLinkProps = {
   children: any;
 };
 
+/**
+ * Navigation link component
+ *
+ * @export
+ * @param {NavLinkProps} { href, children }
+ * @return {*}
+ */
 export function NavLink({ href, children }: NavLinkProps) {
   return (
     <Link

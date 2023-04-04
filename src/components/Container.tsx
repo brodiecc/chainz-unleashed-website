@@ -7,6 +7,13 @@ type ContainerProps = {
   children?: React.ReactNode;
 };
 
+/**
+ * Container component
+ *
+ * @export
+ * @param {ContainerProps} { className, ...props }
+ * @return {*}
+ */
 export function Container({ className, ...props }: ContainerProps) {
   return (
     <div

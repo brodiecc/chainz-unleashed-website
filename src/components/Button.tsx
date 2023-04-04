@@ -33,7 +33,19 @@ type ButtonProps = {
   children: React.ReactNode;
 };
 
-// Button component with custom base and variant styles
+/**
+ * Button component with custom base and variant styles
+ *
+ * @export
+ * @param {ButtonProps} {
+ *   variant = "solid",
+ *   color = "orange",
+ *   className,
+ *   href,
+ *   ...props
+ * }
+ * @return {*}
+ */
 export function Button({
   variant = "solid",
   color = "orange",
