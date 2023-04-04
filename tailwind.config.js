@@ -6,8 +6,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
-        title: ["ThaleahFat"],
+        sans: ["var(--font-inter)", ...defaultTheme.fontFamily.sans],
+        title: [
+          "T--font-thaleahFat",
+          fontFamily.sans,
+          ...defaultTheme.fontFamily.sans,
+        ],
       },
     },
   },

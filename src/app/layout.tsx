@@ -1,17 +1,21 @@
 import Header from "@/components/Header";
 import "@/styles/tailwind.css";
-
 import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 
-// If loading a variable font, you don't need to specify the font weight
 const inter = Inter({
-  subsets: ["latin"],
   display: "swap",
+  variable: "--font-inter",
+});
+
+const thaleahFat = localFont({
+  src: "/fonts/ThaleahFat.woff2",
+  variable: "--font-thaleahFat",
 });
 
 export const metadata = {
   title: "Chainz Unleashed",
-  description: "The Official Site for the blockchain game, Chainz Unleashed.",
+  description: "The Official Site for the Chainz Unleashed blockchain game.",
 };
 
 export default function RootLayout({
@@ -20,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${thaleahFat.variable}`}>
       <body>
         <Header />
         {children}
