@@ -21,7 +21,7 @@ const variantStyles: { [key: string]: { [key: string]: string } } = {
   outline: {
     // stone:
     //   "ring-stone-200 text-stone-700 hover:text-stone-900 hover:ring-stone-300 active:bg-stone-100 active:text-stone-600 focus-visible:ring-stone-300 focus-visible:outline-stone-300",
-    // orange: "ring-orange-300 text-orange-300 hover:text-orange-400",
+    orange: "ring-orange-300 text-white hover:text-orange-300",
   },
 };
 
