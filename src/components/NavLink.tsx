@@ -12,7 +12,7 @@ type NavLinkProps = {
  * @param {NavLinkProps} { href, children }
  * @return {*}
  */
-export default function NavLink({ href, children }: NavLinkProps) {
+export function NavLink({ href, children }: NavLinkProps) {
   return (
     <Link
       href={href}

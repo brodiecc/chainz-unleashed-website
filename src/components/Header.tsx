@@ -1,11 +1,11 @@
 "use client";
+
 import { Fragment } from "react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import Button from "@/components/Button";
-import Container from "@/components/Container";
+import { Button } from "@/components/Button";
+import { Container } from "@/components/Container";
 import { Popover, Transition } from "@headlessui/react";
 import Link from "next/link";
-import NavLink from "@/components/NavLink";
+import { NavLink } from "@/components/NavLink";
 import clsx from "clsx";
 
 // Navigation links

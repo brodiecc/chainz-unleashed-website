@@ -46,7 +46,7 @@ type ButtonProps = {
  * }
  * @return {*}
  */
-export default function Button({
+export function Button({
   variant = "solid",
   color = "orange",
   className,
