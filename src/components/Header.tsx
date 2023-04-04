@@ -1,6 +1,4 @@
 "use client";
-
-import { useState } from "react";
 import { Fragment } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Button from "@/components/Button";
@@ -52,7 +50,7 @@ function MobileNavIcon({ open }: MobileNavIconProps) {
   return (
     <svg
       aria-hidden="true"
-      className="h-3.5 w-3.5 overflow-visible stroke-slate-700"
+      className="h-3.5 w-3.5 overflow-visible stroke-white"
       fill="none"
       strokeWidth={2}
       strokeLinecap="round"
@@ -133,13 +131,11 @@ function MobileNavigation() {
  * @return {*}
  */
 export default function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   return (
     <header className="bg-stone-950 text-white py-7">
       <Container>
         <nav
-          className="sticky flex items-center justify-between px-6 lg:px-8"
+          className="sticky flex items-center justify-between px-6 lg:px-8 z-50"
           aria-label="Global"
         >
           <div className="flex items-center md:gap-x-12">
@@ -155,7 +151,10 @@ export default function Header() {
                 </NavLink>
               ))}
             </div>
-            <Button href="/compare">
+            <Button
+              href="https://play.chainzunleashed.com"
+              className="hidden sm:flex"
+            >
               <span>Play</span>
             </Button>
             <div className="-mr-1 md:hidden">
