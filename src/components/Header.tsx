@@ -3,11 +3,11 @@
 import { useState } from "react";
 import { Fragment } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { Button } from "./Button";
-import { Container } from "./Container";
+import Button from "./Button";
+import Container from "./Container";
 import { Popover, Transition } from "@headlessui/react";
 import Link from "next/link";
-import { NavLink } from "@/components/NavLink";
+import NavLink from "@/components/NavLink";
 import clsx from "clsx";
 
 // Navigation links
