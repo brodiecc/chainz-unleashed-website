@@ -13,25 +13,33 @@ import screenshotVatReturns from "@/images/screenshots/vat-returns.png";
 
 const features = [
   {
-    title: "Phase 1: Explore",
+    // title: "Phase 1: Explore",
+    titleStart: "Phase 1: ",
+    titleEmphasis: "Explore",
     description:
       "Scavenge resources, defeat AI foes, acquire keys from higher-level mobs, and ambush players' spawn points to gain better weapons and dominate the battlefield.",
     image: screenshotPayroll,
   },
   {
-    title: "Phase 2: Stay Alive",
+    // title: "Phase 2: Stay Alive",
+    titleStart: "Phase 2: ",
+    titleEmphasis: "Survive",
     description:
       "Prepare for intense PvP action in the first 'map shrink' phase, with players spawning amidst obstacles, moving platforms, and traps, where your choice of outfit can give you a strategic advantage over your opponents",
     image: screenshotExpenses,
   },
   {
-    title: "Phase 3: Race for the key",
+    titleStart: "Phase 3: ",
+    titleEmphasis: "Race",
+    // titleEnd: " for the key",
     description:
       "grab the keystone to unlock the center room and teleport out before the map collapses, but beware of other players who may try to steal the key and sabotage your escape.",
     image: screenshotVatReturns,
   },
   {
-    title: "Phase 4: Escape the Arena",
+    titleStart: "Phase 4: ",
+    titleEmphasis: "Escape",
+    // titleEnd: " the Arena",
     description:
       "Battle to secure access to the main teleporter room, where you can either defend your position or make a daring escape, as the fate of the game's ultimate winner rests on your shoulders in this intense and high-stakes battle royale.",
     image: screenshotReporting,
@@ -83,7 +91,7 @@ export default function PrimaryFeatures() {
                 <Tab.List className="relative z-10 flex gap-x-4 whitespace-nowrap px-4 sm:mx-auto sm:px-0 lg:mx-0 lg:block lg:gap-x-0 lg:gap-y-1 lg:whitespace-normal">
                   {features.map((feature, featureIndex) => (
                     <div
-                      key={feature.title}
+                      key={feature.titleStart}
                       className={clsx(
                         "group relative rounded-full py-1 px-4 lg:rounded-r-none lg:rounded-l-xl lg:p-6",
                         selectedIndex === featureIndex
@@ -94,14 +102,17 @@ export default function PrimaryFeatures() {
                       <h3>
                         <Tab
                           className={clsx(
-                            "font-display text-lg [&:not(:focus-visible)]:focus:outline-none",
+                            "font-display text-lg focus:ring-0 focus:ring-offset-0",
                             selectedIndex === featureIndex
                               ? "text-stone-900 lg:text-white"
                               : "text-white hover:text-white lg:text-white"
                           )}
                         >
                           <span className="absolute inset-0 rounded-full lg:rounded-r-none lg:rounded-l-xl" />
-                          {feature.title}
+                          {feature.titleStart}
+                          <span className="font-semibold text-orange-300">
+                            {feature.titleEmphasis}
+                          </span>
                         </Tab>
                       </h3>
                       <p
@@ -120,7 +131,7 @@ export default function PrimaryFeatures() {
               </div>
               <Tab.Panels className="lg:col-span-7">
                 {features.map((feature) => (
-                  <Tab.Panel key={feature.title} unmount={false}>
+                  <Tab.Panel key={feature.titleStart} unmount={false}>
                     <div className="relative sm:px-6 lg:hidden">
                       <div className="absolute -inset-x-4 top-[-6.5rem] bottom-[-4.25rem] bg-white/10 ring-1 ring-inset ring-white/10 sm:inset-x-0 sm:rounded-t-xl" />
                       <p className="relative mx-auto max-w-2xl text-base text-white sm:text-center">
