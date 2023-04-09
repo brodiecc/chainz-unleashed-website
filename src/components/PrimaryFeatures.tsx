@@ -102,7 +102,7 @@ export default function PrimaryFeatures() {
                       <h3>
                         <Tab
                           className={clsx(
-                            "font-display text-lg focus:ring-0 focus:ring-offset-0",
+                            "font-display text-lg [&:not(:focus-visible)]:focus:outline-none",
                             selectedIndex === featureIndex
                               ? "text-stone-900 lg:text-white"
                               : "text-white hover:text-white lg:text-white"
