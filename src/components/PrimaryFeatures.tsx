@@ -76,7 +76,9 @@ export default function PrimaryFeatures() {
             What is Chainz Unleashed?
           </h2>
           <p className="mt-6 text-lg tracking-tight text-stone-200">
-            The game consists of four distinct phases, each with its own unique
+            Our multichain game allows you to choose an NFT from our partnered
+            NFT collections and use it to compete against other players. The
+            game consists of four distinct phases, each with its own unique
             challenges and objectives.
           </p>
         </div>
@@ -87,7 +89,7 @@ export default function PrimaryFeatures() {
         >
           {({ selectedIndex }) => (
             <>
-              <div className="-mx-4 flex overflow-x-auto pb-4 sm:mx-0 sm:overflow-visible sm:pb-0 lg:col-span-5">
+              <div className="-mx-4 flex overflow-x-auto pb-4 sm:mx-0 pf-sm:overflow-visible sm:pb-0 lg:col-span-5">
                 <Tab.List className="relative z-10 flex gap-x-4 whitespace-nowrap px-4 sm:mx-auto sm:px-0 lg:mx-0 lg:block lg:gap-x-0 lg:gap-y-1 lg:whitespace-normal">
                   {features.map((feature, featureIndex) => (
                     <div
@@ -95,7 +97,7 @@ export default function PrimaryFeatures() {
                       className={clsx(
                         "group relative rounded-full py-1 px-4 lg:rounded-r-none lg:rounded-l-xl lg:p-6",
                         selectedIndex === featureIndex
-                          ? "bg-white lg:bg-white/10 lg:ring-1 lg:ring-inset lg:ring-white/10"
+                          ? " bg-white lg:bg-white/10 lg:ring-1 lg:ring-inset lg:ring-white/10"
                           : "hover:bg-white/10 lg:hover:bg-white/5"
                       )}
                     >
@@ -110,7 +112,15 @@ export default function PrimaryFeatures() {
                         >
                           <span className="absolute inset-0 rounded-full lg:rounded-r-none lg:rounded-l-xl" />
                           {feature.titleStart}
-                          <span className="font-semibold text-orange-300">
+                          {/* <span className="font-semibold text-orange-300"> */}
+                          <span
+                            className={clsx(
+                              "font-semibold",
+                              selectedIndex === featureIndex
+                                ? "text-stone-900 lg:text-orange-300"
+                                : "text-orange-300"
+                            )}
+                          >
                             {feature.titleEmphasis}
                           </span>
                         </Tab>
@@ -138,7 +148,7 @@ export default function PrimaryFeatures() {
                         {feature.description}
                       </p>
                     </div>
-                    <div className="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
+                    <div className="-mx-4 sm:mx-0 mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
                       <Image
                         className="w-full"
                         src={feature.image}
