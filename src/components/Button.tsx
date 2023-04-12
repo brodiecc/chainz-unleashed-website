@@ -16,7 +16,7 @@ const variantStyles: { [key: string]: { [key: string]: string } } = {
     // stone:
     //   "bg-stone-900 text-white hover:bg-stone-800 hover:text-slate-100 active: bg-stone-800 active:text-slate-300 focus-visible:outline-slate-900",
     orange:
-      "bg-orange-400 text-white hover:bg-orange-300  active:bg-stone-500 focus-visible:outline-orange-300",
+      "bg-orange-500 text-white hover:bg-orange-300  active:bg-stone-500 focus-visible:outline-orange-300",
   },
   outline: {
     // stone:
