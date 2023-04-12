@@ -101,30 +101,30 @@ export default function PrimaryFeatures() {
                           : "hover:bg-white/10 lg:hover:bg-white/5"
                       )}
                     >
-                      <h3>
-                        <Tab
+                      <Tab
+                        className={clsx(
+                          // Forgive me for my sins it was the only way to remove the outline appearing on click instead of focus
+                          "font-display text-lg outline-none",
+                          selectedIndex === featureIndex
+                            ? "text-stone-900 lg:text-white"
+                            : "text-white hover:text-white lg:text-white"
+                        )}
+                      >
+                        <span className="absolute inset-0 rounded-full lg:rounded-r-none lg:rounded-l-xl" />
+                        {feature.titleStart}
+                        {/* <span className="font-semibold text-orange-300"> */}
+                        <span
                           className={clsx(
-                            "font-display text-lg [&:not(:focus-visible)]:focus:outline-none",
+                            "font-semibold",
                             selectedIndex === featureIndex
-                              ? "text-stone-900 lg:text-white"
-                              : "text-white hover:text-white lg:text-white"
+                              ? "text-stone-900 lg:text-orange-400"
+                              : "text-orange-400"
                           )}
                         >
-                          <span className="absolute inset-0 rounded-full lg:rounded-r-none lg:rounded-l-xl" />
-                          {feature.titleStart}
-                          {/* <span className="font-semibold text-orange-300"> */}
-                          <span
-                            className={clsx(
-                              "font-semibold",
-                              selectedIndex === featureIndex
-                                ? "text-stone-900 lg:text-orange-300"
-                                : "text-orange-300"
-                            )}
-                          >
-                            {feature.titleEmphasis}
-                          </span>
-                        </Tab>
-                      </h3>
+                          {feature.titleEmphasis}
+                        </span>
+                      </Tab>
+
                       <p
                         className={clsx(
                           "mt-2 hidden text-sm lg:block",
