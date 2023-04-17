@@ -1,5 +1,6 @@
 import { Button } from "@/components/Button";
 import { Container } from "@/components/Container";
+import { GlitchText } from "@/components/GlitchText";
 
 export default function Hero() {
   return (
@@ -23,8 +24,8 @@ export default function Hero() {
               <div className="mx-auto max-w-3xl text-center">
                 <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
                   The Ultimate{" "}
-                  <span className="text-orange-400">Blockchain</span> Battle
-                  Royale
+                  <GlitchText className="text-orange-400" text="Blockchain" />{" "}
+                  Battle Royale
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-300">
                   Bring your NFTs to life and join the fight. Collect, trade and
