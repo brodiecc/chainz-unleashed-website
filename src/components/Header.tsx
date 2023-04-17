@@ -140,7 +140,7 @@ export default function Header() {
         >
           <div className="flex items-center md:gap-x-12">
             <Link href="#" className="text-4xl font-logo">
-              Chainz <span className="text-orange-300">Unleashed</span>
+              Chainz <span className="text-orange-400">Unleashed</span>
             </Link>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8 font-semibold">
