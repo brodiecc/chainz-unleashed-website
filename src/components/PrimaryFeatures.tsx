@@ -5,8 +5,8 @@ import { Container } from "@/components/Container";
 export default function PrimaryFeatures() {
   return (
     <section
-      id="features"
-      aria-label="Features for the game."
+      id="about"
+      aria-label="Features of the game."
       className="relative overflow-hidden bg-stone-950 pt-20 pb-28 sm:py-32"
     >
       <Container className="relative">
