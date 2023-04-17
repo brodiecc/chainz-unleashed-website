@@ -66,8 +66,8 @@ export default function PrimaryFeatures() {
 
   return (
     <section
-      id="features"
-      aria-label="Features for running your books"
+      id="explanation"
+      aria-label="An overview of the game's features"
       className="relative overflow-hidden bg-stone-950 pt-20 pb-28 sm:py-32"
     >
       <Container className="relative">
