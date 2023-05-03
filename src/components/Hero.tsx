@@ -34,7 +34,7 @@ export default function Hero() {
                 <div className="mt-10 flex items-center justify-center gap-x-6">
                   <Button>Play Now</Button>
                   <Button variant="outline">
-                    Join our Discord <span aria-hidden="true">&nbsp;→</span>
+                    Mint Your Character <span aria-hidden="true">&nbsp;→</span>
                   </Button>
                 </div>
               </div>
