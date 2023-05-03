@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        "pf-sm": "800px",
+        header: "850px",
       },
       fontFamily: {
         sans: ["var(--font-inter)", ...defaultTheme.fontFamily.sans],
