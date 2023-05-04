@@ -10,7 +10,7 @@ export default function PrimaryFeatures() {
       className="relative overflow-hidden bg-stone-950 pt-20 pb-28 sm:py-32"
     >
       <Container className="relative">
-        <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
+        <div className="max-w-2xl md:mx-auto text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
             What is Chainz Unleashed?
           </h2>
