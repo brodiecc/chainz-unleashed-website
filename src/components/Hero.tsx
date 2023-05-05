@@ -1,6 +1,5 @@
 import { Button } from "@/components/Button";
 import { Container } from "@/components/Container";
-import { GlitchText } from "@/components/GlitchText";
 
 export default function Hero() {
   return (
@@ -24,7 +23,7 @@ export default function Hero() {
               <div className="mx-auto max-w-3xl text-center">
                 <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
                   The Ultimate{" "}
-                  <GlitchText className="text-orange-400" text="Blockchain" />{" "}
+                  <span className="text-orange-400">Blockchain </span>
                   Battle Royale
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-300">
@@ -34,7 +33,7 @@ export default function Hero() {
                 <div className="mt-10 flex items-center justify-center gap-x-6">
                   <Button>Play Now</Button>
                   <Button variant="outline">
-                    Join our Discord <span aria-hidden="true">&nbsp;→</span>
+                    Mint Your Character <span aria-hidden="true">&nbsp;→</span>
                   </Button>
                 </div>
               </div>

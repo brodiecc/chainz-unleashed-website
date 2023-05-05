@@ -12,9 +12,10 @@ import clsx from "clsx";
 const navigation = [
   { name: "About", href: "#about" },
   { name: "Roadmap", href: "#roadmap" },
-  { name: "FAQ", href: "#faq" },
-  { name: "News", href: "#news" },
-  { name: "Social", href: "#social" },
+  // { name: "FAQ", href: "#faq" },
+  // { name: "News", href: "#news" },
+  { name: "Socials", href: "#socials" },
+  { name: "Minting", href: "#minting" },
 ];
 
 type MobileNavLinkProps = {
@@ -144,7 +145,7 @@ export default function Header() {
             </Link>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8 font-semibold">
-            <div className="hidden md:flex md:gap-x-6">
+            <div className="hidden header:flex md:gap-x-6">
               {navigation.map((item) => (
                 <NavLink key={item.name} href={item.href}>
                   {item.name}
@@ -153,11 +154,11 @@ export default function Header() {
             </div>
             <Button
               href="https://play.chainzunleashed.com"
-              className="hidden sm:flex"
+              className="hidden header:flex"
             >
               <span>Play</span>
             </Button>
-            <div className="-mr-1 md:hidden">
+            <div className="-mr-1 header:hidden">
               <MobileNavigation />
             </div>
           </div>
