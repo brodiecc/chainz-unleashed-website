@@ -12,7 +12,7 @@ export default function PrimaryFeatures() {
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            What is Chainz <span className="text-orange-400">Unleashed?</span>
+            What is Chainz <span className="text-orange-300">Unleashed?</span>
           </h2>
           <p className="mt-6 text-lg tracking-tight text-stone-200">
             Our multichain game allows you to choose an NFT from our partnered
