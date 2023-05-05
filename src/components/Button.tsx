@@ -30,6 +30,7 @@ type ButtonProps = {
   color?: string;
   className?: string;
   href?: string;
+  target?: string;
   children: React.ReactNode;
 };
 
@@ -51,6 +52,7 @@ export function Button({
   color = "orange",
   className,
   href,
+  target,
   ...props
 }: ButtonProps) {
   className = clsx(
@@ -59,7 +61,7 @@ export function Button({
     className
   );
   return href ? (
-    <Link href={href} className={className} {...props} />
+    <Link href={href} target="_blank" className={className} {...props} />
   ) : (
     <button className={className} {...props} />
   );
