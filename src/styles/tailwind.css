@@ -5,3 +5,9 @@
 #__next {
   min-height: 100%;
 }
+
+@layer components {
+  .disable-blur {
+    image-rendering: pixelated;
+  }
+}
