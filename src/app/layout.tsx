@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import "@/styles/tailwind.css";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
