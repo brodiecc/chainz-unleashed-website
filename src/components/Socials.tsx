@@ -34,18 +34,26 @@ export default function Socials() {
     <section
       id="Socials"
       aria-label="Socials of the game."
-      className="relative overflow-hidden pt-20 pb-28 sm:py-20 bg-gradient-to-b from-orange-400 to-10% to-stone-950 "
+      className="relative overflow-hidden pt-20 pb-8 sm:pt-20 bg-gradient-to-b from-orange-400 to-10% to-stone-950 "
     >
-      <Container className="relative">
+      <Container className="">
         <div className="max-w-2xl md:mx-auto text-center xl:max-w-none text-white">
           <h2 className="text-3xl tracking-tight sm:text-4xl md:text-5xl">
             Keep in <span className="text-orange-300">Touch</span>
           </h2>
           <div className="flex justify-center my-12 gap-4 md:gap-12">
-            <Button className="gap-2 bg-[#7289da] hover:bg-[#7289da]/70">
+            <Button
+              href="https://discord.gg/84aQ9rGqcA"
+              target="_blank"
+              className="gap-2 bg-[#7289da] hover:bg-[#7289da]/70"
+            >
               <span>Discord</span> <DiscordIcon />
             </Button>
-            <Button className="gap-2 bg-[#1DA1F2] hover:bg-[#1DA1F2]/70">
+            <Button
+              href=""
+              target="_blank"
+              className="gap-2 bg-[#1DA1F2] hover:bg-[#1DA1F2]/70"
+            >
               <span>Twitter</span> <DiscordIcon />
             </Button>
           </div>
