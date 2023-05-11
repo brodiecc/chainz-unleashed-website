@@ -32,7 +32,7 @@ const TwitterIcon = () => {
 export default function Socials() {
   return (
     <section
-      id="Socials"
+      id="socials"
       aria-label="Socials of the game."
       className="relative overflow-hidden pt-20 pb-8 sm:pt-20 bg-gradient-to-b from-orange-400 to-10% to-stone-950 "
     >

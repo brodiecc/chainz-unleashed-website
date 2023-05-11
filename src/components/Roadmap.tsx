@@ -4,7 +4,7 @@ import { RoadmapGrid } from "./RoadmapGrid";
 export default function Roadmap() {
   return (
     <section
-      id="Roadmap"
+      id="roadmap"
       aria-label="Production roadmap of the game."
       className="relative overflow-hidden pt-20 pb-28 sm:py-20 bg-gradient-to-b from-stone-950  to-orange-400 "
     >
