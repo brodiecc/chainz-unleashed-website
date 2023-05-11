@@ -61,8 +61,10 @@ export default function Hero() {
                   battle your way to the top!
                 </p>
                 <div className="mt-10 flex items-center justify-center gap-x-6">
-                  <Button>Play Now</Button>
-                  <Button variant="outline">
+                  <Button href="https://play.chainzunleashed.com">
+                    Play Now
+                  </Button>
+                  <Button variant="outline" href="/mint">
                     Mint Your Character <span aria-hidden="true">&nbsp;→</span>
                   </Button>
                 </div>
