@@ -133,14 +133,14 @@ function MobileNavigation() {
  */
 export default function Header() {
   return (
-    <header className="bg-stone-950 text-white py-7">
+    <header className="bg-stone-950 text-white py-7 fixed top-0 z-50 w-screen">
       <Container>
         <nav
           className="sticky flex items-center justify-between px-6 lg:px-8 z-50"
           aria-label="Global"
         >
           <div className="flex items-center md:gap-x-12">
-            <Link href="#" className="text-4xl font-logo">
+            <Link href="#home" className="text-4xl font-logo">
               Chainz <span className="text-orange-400">Unleashed</span>
             </Link>
           </div>
