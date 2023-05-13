@@ -32,7 +32,7 @@ const TwitterIcon = () => {
 export default function Socials() {
   return (
     <section
-      id="Socials"
+      id="socials"
       aria-label="Socials of the game."
       className="relative overflow-hidden pt-20 pb-8 sm:pt-20 bg-gradient-to-b from-orange-400 to-10% to-stone-950 "
     >
@@ -50,11 +50,11 @@ export default function Socials() {
               <span>Discord</span> <DiscordIcon />
             </Button>
             <Button
-              href=""
+              href="https://twitter.com/chainzunleashed"
               target="_blank"
               className="gap-2 bg-[#1DA1F2] hover:bg-[#1DA1F2]/70"
             >
-              <span>Twitter</span> <DiscordIcon />
+              <span>Twitter</span> <TwitterIcon />
             </Button>
           </div>
         </div>
