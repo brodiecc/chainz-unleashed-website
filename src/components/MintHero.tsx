@@ -49,13 +49,14 @@ export default function Hero() {
         <div className="pt-8 flex justify-between gap-8 flex-col lg:flex-row mx-8">
           <div className="flex flex-col lg:basis-[55%] justify-center">
             <h1 className="text-4xl font-bold tracking-tight sm:text-6xl sm:leading-[1.1] text-center sm:text-left">
-              Introducing the Founder's Collection.
+              Introducing the Founder&apos;s Collection.
             </h1>
             <p className="mt-6 text-lg leading-8">
-              The Chains Unleashed Founder's Collection for Cardano pays tribute
-              to the visionary leaders whose groundbreaking contributions to
-              mathematics, science, and philosophy paved the way for the
-              innovative blockchain technology that Cardano represents.
+              The Chains Unleashed Founder&apos;s Collection for Cardano pays
+              tribute to the visionary leaders whose groundbreaking
+              contributions to mathematics, science, and philosophy paved the
+              way for the innovative blockchain technology that Cardano
+              represents.
             </p>
           </div>
           <div className="grid grid-cols-3 md:flex md:justify-around lg:grid lg:grid-cols-3 lg:basis-[45%] gap-6 xl:gap-y-0">
