@@ -33,7 +33,7 @@ const collections = [
 
 export default function Hero() {
   return (
-    <div className="bg-stone-900">
+    <div id="home" className="bg-stone-900">
       <Container className="py-16">
         <div className="relative isolate pt-14">
           <div

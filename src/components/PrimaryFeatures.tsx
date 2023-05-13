@@ -7,7 +7,7 @@ export default function PrimaryFeatures() {
     <section
       id="about"
       aria-label="Features of the game."
-      className="relative overflow-hidden bg-stone-950 pt-20 pb-28 sm:py-32"
+      className="relative overflow-hidden bg-stone-950 py-28 sm:py-32"
     >
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto text-center xl:max-w-none">

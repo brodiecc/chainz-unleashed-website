@@ -6,7 +6,7 @@ export default function Roadmap() {
     <section
       id="roadmap"
       aria-label="Production roadmap of the game."
-      className="relative overflow-hidden pt-20 pb-28 sm:py-20 bg-gradient-to-b from-stone-950  to-orange-400 "
+      className="relative overflow-hidden py-32 bg-gradient-to-b from-stone-950  to-orange-400 "
     >
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto text-center xl:max-w-none text-white">
