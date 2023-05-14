@@ -155,6 +155,7 @@ export default function Header() {
             <Button
               href="https://play.chainzunleashed.com"
               className="hidden header:flex"
+              target="_blank"
             >
               <span>Play</span>
             </Button>

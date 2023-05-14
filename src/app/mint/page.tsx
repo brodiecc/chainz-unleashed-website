@@ -1,9 +1,16 @@
 import Hero from "@/components/MintHero";
+import Workshop from "@/components/Workshop";
+import MintClientWrapper from "@/components/MintClientWrapper";
 
-export default function Mint() {
+function Mint() {
   return (
     <main>
-      <Hero />
+      <MintClientWrapper>
+        <Hero />
+        <Workshop />
+      </MintClientWrapper>
     </main>
   );
 }
+
+export default Mint;

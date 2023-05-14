@@ -15,6 +15,8 @@ const variantStyles: { [key: string]: { [key: string]: string } } = {
   solid: {
     // stone:
     //   "bg-stone-900 text-white hover:bg-stone-800 hover:text-slate-100 active: bg-stone-800 active:text-slate-300 focus-visible:outline-slate-900",
+    white:
+      "bg-stone-100 text-orange-500 hover:bg-orange-600 hover:text-stone-100 active:bg-orange-900 focus-visible:outline-orange-300",
     orange:
       "bg-orange-500 text-white hover:bg-orange-300  active:bg-stone-500 focus-visible:outline-orange-300",
   },
@@ -61,7 +63,7 @@ export function Button({
     className
   );
   return href ? (
-    <Link href={href} target="_blank" className={className} {...props} />
+    <Link href={href} target={target} className={className} {...props} />
   ) : (
     <button className={className} {...props} />
   );
