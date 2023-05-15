@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const paymentGateways = {
   "Lord Byron": "https://pay.nmkr.io/?p=e534593508b8484ab8f14ef28f4b7cd3&c=1",
   Lovelace: "https://pay.nmkr.io/?p=caf134bb78764e8db2337db170ba2269&c=1",
@@ -46,8 +48,11 @@ function OpenPaymentWindow(gateway: string) {
 
 export function NMKRButton({ gateway }: { gateway: string }) {
   return (
-    <img
+    <Image
       src="https://studio.nmkr.io/images/buttons/paybutton_1_2.svg"
+      alt="NFT Maker Payment Link"
+      width={343}
+      height={50}
       onClick={OpenPaymentWindow(gateway)}
       className="cursor-pointer hover:opacity-75"
     />

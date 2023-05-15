@@ -61,8 +61,8 @@ export function WorkshopTools() {
         </div>
         <div className="text-orange-300 italic ">
           <p>
-            * This NFT is part of the Founder's Collection. Only 100 will ever
-            be minted before this NFT becomes unavailable.
+            * This NFT is part of the Founder&apos;s Collection. Only 100 will
+            ever be minted before this NFT becomes unavailable.
           </p>
         </div>
         <section aria-labelledby="details-heading" className="mt-8">

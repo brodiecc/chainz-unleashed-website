@@ -76,11 +76,11 @@ export function NFTCard({
 }) {
   const nft = nfts.find((nft) => nft.name === name);
 
+  const { setActiveNFT } = useContext(NFTContext);
+
   if (!nft) {
     return null;
   }
-
-  const { setActiveNFT } = useContext(NFTContext);
 
   return (
     <Link
