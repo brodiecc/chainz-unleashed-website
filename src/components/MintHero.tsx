@@ -1,5 +1,6 @@
 import { NFTCard } from "@/components/NFTCard";
 import { Container } from "@/components/Container";
+import { Button } from "@/components/Button";
 
 export default function Hero() {
   return (
@@ -47,8 +48,8 @@ export default function Hero() {
       </div>
       <Container className="py-48 lg:py-64">
         <div className="pt-8 flex justify-between gap-8 flex-col lg:flex-row mx-8">
-          <div className="flex flex-col lg:basis-[55%] justify-center">
-            <h1 className="text-4xl font-bold tracking-tight sm:text-6xl sm:leading-[1.1] text-center sm:text-left">
+          <div className="flex flex-col lg:basis-[55%] justify-center items-center">
+            <h1 className="text-4xl font-bold tracking-tight md:text-6xl sm:leading-[1.1] text-center md:text-left">
               Introducing the Founder&apos;s Collection.
             </h1>
             <p className="mt-6 text-lg leading-8">
@@ -58,14 +59,37 @@ export default function Hero() {
               way for the innovative blockchain technology that Cardano
               represents.
             </p>
+            <div className="mt-10 flex items-center justify-center gap-x-6">
+              <Button color="white" href="/mint#workshop">
+                Get Your NFT!
+              </Button>
+            </div>
           </div>
           <div className="grid grid-cols-3 md:flex md:justify-around lg:grid lg:grid-cols-3 lg:basis-[45%] gap-6 xl:gap-y-0">
-            <NFTCard name="Byron" className="xl:-mt-6" />
-            <NFTCard name="Lovelace" className="xl:mt-6" />
-            <NFTCard name="Shelley" className="xl:-mt-6" />
-            <NFTCard name="Voltaire" className="xl:-mt-6" />
-            <NFTCard name="Basho" className="xl:mt-6" />
-            <NFTCard name="Goguen" className="xl:-mt-4" />
+            <NFTCard
+              name="Lord Byron"
+              className="xl:-mt-6 max-w-[120px] md:max-w-none"
+            />
+            <NFTCard
+              name="Lovelace"
+              className="xl:mt-6 max-w-[120px] md:max-w-none"
+            />
+            <NFTCard
+              name="Shelley"
+              className="xl:-mt-6 max-w-[120px] md:max-w-none"
+            />
+            <NFTCard
+              name="Voltaire"
+              className="xl:-mt-6 max-w-[120px] md:max-w-none"
+            />
+            <NFTCard
+              name="Basho"
+              className="xl:mt-6 max-w-[120px] md:max-w-none"
+            />
+            <NFTCard
+              name="Goguen"
+              className="xl:-mt-4 max-w-[120px] md:max-w-none"
+            />
           </div>
         </div>
       </Container>
