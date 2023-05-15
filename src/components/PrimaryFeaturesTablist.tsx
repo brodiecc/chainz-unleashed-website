@@ -4,10 +4,10 @@ import Image from "next/image";
 import { Tab } from "@headlessui/react";
 import clsx from "clsx";
 
-import connectYourWallet from "@/images/screenshots/connectyourwallet.jpg";
-import customizeYourCharacter from "@/images/screenshots/customizeyourcharacter.jpg";
-import exploreTheBattlefield from "@/images/screenshots/explorethebattlefield.jpg";
-import fightotherplayers from "@/images/screenshots/fightotherplayers.jpg";
+import connectYourWallet from "@/images/screenshots/connectyourwallet.jpeg";
+import customizeYourCharacter from "@/images/screenshots/customizeyourcharacter.jpeg";
+import exploreTheBattlefield from "@/images/screenshots/explorethebattlefield.jpeg";
+import fightotherplayers from "@/images/screenshots/fightotherplayers.jpeg";
 
 const features = [
   {
