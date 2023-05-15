@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
 import clsx from "clsx";
 import { Disclosure, Tab } from "@headlessui/react";
 import { MinusIcon, PlusIcon } from "@heroicons/react/24/outline";
@@ -10,15 +9,14 @@ import { useContext } from "react";
 import { NFTContext } from "@/components/MintClientWrapper";
 
 import { nfts } from "@/components/NFTCard";
-import basho from "@/images/nfts/basho.png";
 
 export function WorkshopTools() {
   const { activeNFT, setActiveNFT } = useContext(NFTContext);
 
   return (
-    <div className="flex flex-row ">
-      <div className="flex flex-col basis-1/2 p-12">
-        <div className="mb-8 bg-stone-500 rounded-xl shadow-lg shadow-stone-100  border-4 border-stone-100">
+    <div className="flex flex-col sm:flex-row">
+      <div className="flex flex-row sm:flex-col basis-1/2 p-12">
+        <div className="mb-8 bg-stone-500 rounded-xl shadow-lg shadow-stone-100  border-4 border-stone-100 basis-2/5 sm:basis-auto">
           <Image
             src={activeNFT.image}
             alt={activeNFT.name}
@@ -29,11 +27,11 @@ export function WorkshopTools() {
             blurDataURL="../images/nfts/basho.png"
           />
         </div>
-        <div className="flex flex-row gap-4">
+        <div className="pl-8 sm:pl-0 flex flex-row gap-2 sm:gap-4 flex-wrap lg:flex-nowrap basis-3/5 sm:basis-auto">
           {nfts.map((nft) => (
             <div
               key={nft.name}
-              className="cursor-pointer"
+              className="cursor-pointer basis-1/3 sm:basis-1/4"
               onClick={() => setActiveNFT(nft)}
             >
               <Image
@@ -55,10 +53,10 @@ export function WorkshopTools() {
         <div className="font-bold text-4xl">{activeNFT.name}</div>
         <div className="pb-8 pt-2 text-orange-300 italic">Limited Edtion *</div>
         <div className="pb-8 text-2xl">500 ₳</div>
-        <div className="pb-8 lg:h-32">
+        <div className="hidden md:flex pb-8 lg:h-32">
           <p>{activeNFT?.descriptionInGame}</p>
         </div>
-        <div className="pb-8 lg:h-40">
+        <div className="hidden md:flex pb-8 lg:h-40">
           <p>{activeNFT?.descriptionEra}</p>
         </div>
         <div className="text-orange-300 italic ">
@@ -73,7 +71,7 @@ export function WorkshopTools() {
           </h2>
 
           <div className="divide-y divide-gray-200 border-t pt-8">
-            <NMKRButton gateway="Lord Byron" />
+            <NMKRButton gateway={activeNFT.name} />
             {/* <Disclosure as="div">
               {({ open }) => (
                 <>

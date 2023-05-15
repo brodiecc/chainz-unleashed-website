@@ -60,7 +60,7 @@ export default function Hero() {
               represents.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <Button color="white" href="#workshop">
+              <Button color="white" href="/mint#workshop">
                 Get Your NFT!
               </Button>
             </div>

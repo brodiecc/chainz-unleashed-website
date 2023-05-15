@@ -4,43 +4,43 @@ import Image from "next/image";
 import { Tab } from "@headlessui/react";
 import clsx from "clsx";
 
-import screenshotExpenses from "@/images/screenshots/expenses.png";
-import screenshotPayroll from "@/images/screenshots/payroll.png";
-import screenshotReporting from "@/images/screenshots/reporting.png";
-import screenshotVatReturns from "@/images/screenshots/vat-returns.png";
+import connectYourWallet from "@/images/screenshots/connectyourwallet.jpg";
+import customizeYourCharacter from "@/images/screenshots/customizeyourcharacter.jpg";
+import exploreTheBattlefield from "@/images/screenshots/explorethebattlefield.jpg";
+import fightotherplayers from "@/images/screenshots/fightotherplayers.jpg";
 
 const features = [
   {
     // title: "Phase 1: Explore",
-    titleStart: "Phase 1: ",
-    titleEmphasis: "Explore",
+    titleStart: "Connect Your ",
+    titleEmphasis: "Wallet",
     description:
-      "Scavenge resources, defeat AI foes, acquire keys from higher-level mobs, and ambush players' spawn points to gain better weapons and dominate the battlefield.",
-    image: screenshotPayroll,
+      "Securely connect your preferred Cardano wallet to access our partnered NFT Collections. Stay tuned for the upcoming multi-chain wallet option.",
+    image: connectYourWallet,
   },
   {
     // title: "Phase 2: Stay Alive",
-    titleStart: "Phase 2: ",
-    titleEmphasis: "Survive",
+    titleStart: "Use Your Favourite ",
+    titleEmphasis: "NFT",
     description:
-      "Prepare for intense PvP action in the first 'map shrink' phase, with players spawning amidst obstacles, moving platforms, and traps, where your choice of outfit can give you a strategic advantage over your opponents",
-    image: screenshotExpenses,
+      "Bring your favorite NFT collection to life with our incredible Character Customizer and personalize your characters to match your style.",
+    image: customizeYourCharacter,
   },
   {
-    titleStart: "Phase 3: ",
-    titleEmphasis: "Race",
+    titleStart: "Explore and Dominate The ",
+    titleEmphasis: "Battlefield",
     // titleEnd: " for the key",
     description:
-      "grab the keystone to unlock the center room and teleport out before the map collapses, but beware of other players who may try to steal the key and sabotage your escape.",
-    image: screenshotVatReturns,
+      "Embark on an exciting journey through four distinct phases, each with its own set of unique challenges and objectives.",
+    image: exploreTheBattlefield,
   },
   {
-    titleStart: "Phase 4: ",
-    titleEmphasis: "Escape",
+    titleStart: "Join Tournaments and Win ",
+    titleEmphasis: "Prizes",
     // titleEnd: " the Arena",
     description:
-      "Battle to secure access to the main teleporter room, where you can either defend your position or make a daring escape, as the fate of the game's ultimate winner rests on your shoulders in this intense and high-stakes battle royale.",
-    image: screenshotReporting,
+      "Play custom games with your friends or climb the ranks and win prices in official tournaments. Chainz Unleashed caters for casual and hardcore players!",
+    image: fightotherplayers,
   },
 ];
 
