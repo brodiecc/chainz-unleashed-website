@@ -7,6 +7,9 @@ import { Popover, Transition } from "@headlessui/react";
 import Link from "next/link";
 import { NavLink } from "@/components/NavLink";
 import clsx from "clsx";
+import Image from "next/image";
+
+import Logo from "@/images/logos/chainzUnleashed.png";
 
 // Navigation links
 const navigation = [
@@ -141,23 +144,40 @@ export default function Header() {
         >
           <div className="flex items-center md:gap-x-12">
             <Link href="#home" className="text-4xl font-logo">
-              Chainz <span className="text-orange-400">Unleashed</span>
+              {/* Chainz <span className="text-orange-400">Unleashed</span> */}
+              <Image
+                src={Logo}
+                alt="Chainz Unleashed"
+                height={27}
+                priority={true}
+                width={300}
+                unoptimized={true}
+                quality={100}
+              ></Image>
             </Link>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8 font-semibold">
             <div className="hidden header:flex md:gap-x-6">
               {navigation.map((item) => (
-                <NavLink key={item.name} href={item.href}>
+                <NavLink
+                  key={item.name}
+                  href={item.href}
+                  className={
+                    item.name === "Minting"
+                      ? "border border-orange-300 px-8 hover:bg-orange-300/10 hover:text-orange-200"
+                      : ""
+                  }
+                >
                   {item.name}
                 </NavLink>
               ))}
             </div>
             <Button
               href="https://play.chainzunleashed.com"
-              className="hidden header:flex"
+              className="hidden header:flex px-8 h-12 rounded-[16px]"
               target="_blank"
             >
-              <span>Play</span>
+              <span className="text-lg">Play</span>
             </Button>
             <div className="-mr-1 header:hidden">
               <MobileNavigation />
