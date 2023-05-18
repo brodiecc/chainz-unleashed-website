@@ -149,10 +149,8 @@ export default function Header() {
                 src={Logo}
                 alt="Chainz Unleashed"
                 height={27}
-                priority={true}
                 width={300}
                 unoptimized={true}
-                quality={100}
               ></Image>
             </Link>
           </div>
@@ -164,7 +162,7 @@ export default function Header() {
                   href={item.href}
                   className={
                     item.name === "Minting"
-                      ? "border border-orange-300 px-8 hover:bg-orange-300/10 hover:text-orange-200"
+                      ? "border border-orange-300 hover:bg-orange-300/10 hover:text-orange-200"
                       : ""
                   }
                 >
@@ -174,10 +172,10 @@ export default function Header() {
             </div>
             <Button
               href="https://play.chainzunleashed.com"
-              className="hidden header:flex px-8 h-12 rounded-[16px]"
+              className="hidden header:flex rounded-[16px]"
               target="_blank"
             >
-              <span className="text-lg">Play</span>
+              <span className="">Play</span>
             </Button>
             <div className="-mr-1 header:hidden">
               <MobileNavigation />
