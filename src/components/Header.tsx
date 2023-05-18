@@ -149,10 +149,8 @@ export default function Header() {
                 src={Logo}
                 alt="Chainz Unleashed"
                 height={27}
-                priority={true}
                 width={300}
                 unoptimized={true}
-                quality={100}
               ></Image>
             </Link>
           </div>
