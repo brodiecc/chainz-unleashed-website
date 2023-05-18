@@ -16,7 +16,7 @@ type NavLinkProps = {
  */
 export function NavLink({ href, children, className }: NavLinkProps) {
   className = clsx(
-    "inline-block rounded-lg py-3 px-2 text-sm text-white hover:bg-stone-700 hover:text-slate-100 rounded-[16px]",
+    "inline-block rounded-lg py-2 px-2 text-sm text-white hover:bg-stone-700 hover:text-slate-100 rounded-[16px]",
     className
   );
 

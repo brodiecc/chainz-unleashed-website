@@ -64,10 +64,15 @@ export default function Hero() {
                   <Button
                     href="https://play.chainzunleashed.com"
                     target="_blank"
+                    className="sm:p-4 sm:text-lg"
                   >
                     Play Now
                   </Button>
-                  <Button variant="outline" href="/mint">
+                  <Button
+                    variant="outline"
+                    href="/mint"
+                    className="sm:p-4 sm:text-lg"
+                  >
                     Mint Your Character <span aria-hidden="true">&nbsp;→</span>
                   </Button>
                 </div>
