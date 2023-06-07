@@ -52,7 +52,7 @@ export function WorkshopTools() {
       <div className="flex flex-col basis-1/2 p-12 text-stone-100">
         <div className="font-bold text-4xl">{activeNFT.name}</div>
         <div className="pb-8 pt-2 text-orange-300 italic">Limited Edtion *</div>
-        <div className="pb-8 text-2xl">500 ₳</div>
+        <div className="pb-8 text-2xl">55 ₳</div>
         <div className="hidden md:flex pb-8 lg:h-32">
           <p>{activeNFT?.descriptionInGame}</p>
         </div>
@@ -61,7 +61,7 @@ export function WorkshopTools() {
         </div>
         <div className="text-orange-300 italic ">
           <p>
-            * This NFT is part of the Founder&apos;s Collection. Only 100 will
+            * This NFT is part of the Founder&apos;s Collection. Only 500 will
             ever be minted before this NFT becomes unavailable.
           </p>
         </div>
