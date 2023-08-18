@@ -73,7 +73,7 @@ export default function Hero() {
                     href="/mint"
                     className="sm:p-4 sm:text-lg"
                   >
-                    Mint Your Character <span aria-hidden="true">&nbsp;→</span>
+                    Learn More <span aria-hidden="true">&nbsp;→</span>
                   </Button>
                 </div>
               </div>
@@ -92,7 +92,7 @@ export default function Hero() {
             />
           </div>
         </div>
-        <div className="flex flex-col items-center">
+        {/* <div className="flex flex-col items-center">
           <p className="mb-12 text-lg leading-8 text-gray-100">
             In Collaboration With
           </p>
@@ -116,7 +116,7 @@ export default function Hero() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </Container>
     </div>
   );

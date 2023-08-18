@@ -18,7 +18,7 @@ const navigation = [
   // { name: "FAQ", href: "#faq" },
   // { name: "News", href: "#news" },
   { name: "Socials", href: "#socials" },
-  { name: "Minting", href: "/mint" },
+  { name: "Learn More", href: "/mint" },
 ];
 
 type MobileNavLinkProps = {
